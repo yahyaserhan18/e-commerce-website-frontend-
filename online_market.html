@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serhan Market</title>
+    <link rel="icon" href="serhan.ico" />
+    <link rel="stylesheet" href="online_market.css" />
+
+    <!-- font awesome kütüphanesi eklemek -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/92d70a2fd8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header kismi -->
+
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa fa-shopping-basket"></i>serhan market
+      </a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#categories">categories </a>
+        <a href="#review">Review</a>
+        <a href="#about-us">About us</a>
+        <a href="#contack-section">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn" title="menu"></div>
+        <div class="fa fa-search" id="search-btn" title="search"></div>
+        <div
+          class="fa fa-shopping-cart"
+          id="car-btn"
+          title="shopping cart"
+        ></div>
+        <div class="fa fa-user" id="login-btn" title="login now"></div>
+        <div class="fa fa-clock-o" id="clock-btn" title="current time"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+
+      <!-- sepete -->
+      <div class="shopping-cart">
+        <h1>shopping cart</h1>
+        <div class="product-cart"></div>
+        <div class="total">total : $0.00</div>
+        <a href="chek-out.html" class="btn">check out</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>
+          forget your password
+          <a href="forget_password_page.html" target="_blank">click here</a>
+        </p>
+        <p>
+          don't have an account
+          <a href="create_page.html" target="_blank"> create now</a>
+        </p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+      <!-- anlik saat -->
+      <!-- js'te cakisma olmasin diye burda iki class yaptim -->
+      <div class="clock" id="clock">
+        <div id="currentTime" class="current-time"></div>
+      </div>
+    </header>
+
+    <!-- Home kismi : -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh and <span>organic</span> products for your</h3>
+        <p>
+          We are keen to provide distinctive and unique services and we always
+          work to make the customer happy
+        </p>
+        <a href="#categories" class="btn">Start shopping</a>
+      </div>
+    </section>
+
+    <!-- <button class="fa-solid fa-down" onclick="toggleDarkMode()"></button> -->
+    <!-- kategoriler kismi : -->
+
+    <section class="categories" id="categories">
+      <!-- Change body Mode btn-->
+      <button class="toggle-btn" onclick="toggleDarkMode()">
+        Change body Mode
+      </button>
+
+      <h1 class="heading">our <span>categories</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="images/organic-vegetables.png"
+            alt="organic-vegetables"
+            width="150px"
+            height="150px"
+          />
+          <h3>organic vegetables</h3>
+          <a href="Organic-Vegetables.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/fresh-fruits.jpg"
+            alt="fresh fruits"
+            width="150px"
+            height="150px"
+          />
+          <h3>fresh fruits</h3>
+          <a href="Fresh-Fruits.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img
+            src="images/dairy-products.jpg"
+            alt="dairy products"
+            width="150px"
+            height="150px"
+          />
+          <h3>dairy products</h3>
+          <a href="Dairy-Products.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img
+            src="images/fresh-meat.png"
+            alt="fresh meat"
+            width="150px"
+            height="150px"
+          />
+          <h3>fresh meat</h3>
+          <a href="Fresh-Meat.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img
+            src="images/from-the-oven.jpg"
+            alt="from the oven"
+            width="150px"
+            height="150px"
+          />
+          <h3>from the oven</h3>
+          <a href="From-The-Oven.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img
+            src="images/ice-cream.png"
+            alt="ice cream"
+            width="150px"
+            height="150px"
+          />
+          <h3>ice cream</h3>
+          <a href="Ice-Cream.html" class="btn">shop now</a>
+        </div>
+        <div class="box">
+          <img
+            src="images/snack.png"
+            alt="snack"
+            width="150px"
+            height="150px"
+          />
+          <h3>snack</h3>
+          <a href="Snack.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img
+            src="images/staple-foods.jpg"
+            alt="staple foods"
+            width="150px"
+            height="150px"
+          />
+          <h3>staple foods</h3>
+          <a href="Staple-Foods.html" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- review kismi : -->
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="review-slider">
+        <div class="wrapper">
+          <div class="box">
+            <img
+              src="images/ahmed-vural.png"
+              alt="ahmed vural"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>ahmed vural</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/zeynep-uz.jpg"
+              alt="zeynep uz"
+              width="200px"
+              height="200px"
+            />
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>zeynep uz</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/leyla-aksel.png"
+              alt="leyla aksel"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>leyla aksel</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/mustafa-selvi.jpg"
+              alt="mustafa selvi"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>ahmed vural</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/zehra-dal.jpg"
+              alt="zehra dal"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>zehra dal</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/ali-murt.jpg"
+              alt="ali murt"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>ali murt</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/hasan-demir.png"
+              alt="hasan demir"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>hasan demir</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/nihan-turgul.jpg"
+              alt="nihan turgul"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>nihan turgul</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/melisa-tekin.jpg"
+              alt="melisa tekin"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>melisa tekin</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/osman-giray.png"
+              alt="osman giray"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>osman giray</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="images/selim-yavuz.jpg"
+              alt="selim yavuz"
+              width="200px"
+              height="200px"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              molestias sint error, numquam soluta nisi dolores, aut mollitia
+              temporibus iure odit aliquam molestiae? Repellendus rerum, eaque
+              neque blanditiis unde distinctio.
+            </p>
+            <h3>selim yavuz</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hakkımızda kısmı : -->
+    <section class="about-us" id="about-us">
+      <h1 class="heading">about <span> us </span></h1>
+      <div class="container">
+        <div class="row">
+          <div class="image-col">
+            <img src="serhan market logo.jpg" alt="serhan market logo" />
+          </div>
+          <div class="content-col">
+            our Company is Serhan Market , Company Structure is Limited
+            Liability Company , Management and Ownership is Primary Owner and
+            CEO is <b>Yahya Serhan</b> , Company Location in turkey-sakarya ,
+            Company Establishment Date : Founded in [2010], addressing the need
+            for providing a comprehensive and diverse shopping platform. Our
+            Mission: To provide a distinctive and reliable shopping experience
+            for our customers, offering a wide range of products with the
+            highest quality standards. Products/Services and Target Market: We
+            offer a broad range of consumer products, focusing on quality and
+            diversity, targeting a wide range of customers in the [Target
+            Market]. Our Goals: Expand our presence in the local market, enhance
+            our share in the sector, and achieve sustainable growth by providing
+            innovative and efficient services. Vision Statement: To become the
+            preferred choice for customers seeking a distinctive shopping
+            experience, and to be pioneers in delivering innovations and
+            improving the customer experience.
+            <small>
+              <a
+                href="used_Pictures.html"
+                style="color: blue; font-style: italic"
+                target="_blank"
+                >Pictures used on the site</a
+              ></small
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- iletişim kısmı : -->
+    <section class="contack-section" id="contack-section">
+      <h1 class="heading">get in <span> touch </span></h1>
+      <div class="contact">
+        <form action="">
+          <label for="fn">full name</label>
+          <input
+            class="contack-input"
+            id="fn"
+            type="text"
+            placeholder="enter a full name"
+            required
+          />
+          <label for="em">email</label>
+          <input
+            class="contack-input"
+            id="em"
+            type="email"
+            placeholder="enter an email"
+            required
+          />
+          <label for="coun">country</label>
+          <input
+            class="contack-input"
+            id="coun"
+            type="text"
+            placeholder="enter your country"
+            required
+          />
+          <label for="subj">subject</label>
+          <input
+            class="contack-input"
+            id="subj"
+            type="text"
+            placeholder="enter a subject"
+            required
+          />
+          <label for="mess">message</label>
+          <textarea
+            class="contack-input"
+            id="mess"
+            placeholder="enter your message"
+            required
+          ></textarea>
+          <input type="submit" value="submit" onclick="showConfirmation()" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer kismi :  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>serhan market <i class="fa fa-shopping-basket"></i></h3>
+          <p>
+            Do not forget, We Are Keen To Provide Distinctive And Unique
+            Services And We Always Work To Make The Customer Happy and You can
+            view our accounts below
+          </p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/yahya.serhan.98?mibextid=ZbWKwL"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+            <a
+              href="https://twitter.com/yahyaserha"
+              target="_blank"
+              class="fa fa-twitter"
+            ></a>
+            <a
+              href="https://www.instagram.com/yahya.serhan.2004/?igshid=NTc4MTIwNjQ2YQ=="
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yahya-serhan-undefined-916a34298/"
+              target="_blank"
+              class="fa fa-linkedin"
+            ></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+
+          <a
+            href="https://api.whatsapp.com/send/?phone=9053742704800000"
+            target="_blank"
+            class="links"
+          >
+            <i class="fa fa-phone"> <span>+905374270480</span></i></a
+          >
+          <a href="https://t.me/Yahya_serhn" target="_blank" class="links">
+            <i class="fa fa-telegram"> <span>+905374270480</span></i></a
+          >
+
+          <a
+            href="mailto:yahyaserhanmoon@gmail.com"
+            target="_blank"
+            class="links"
+          >
+            <i class="fa fa-envelope"
+              ><span>yahyaserhanmoon@gmail.com</span></i
+            ></a
+          >
+          <a
+            href="https://maps.app.goo.gl/22gmN1oYPpxanqe46"
+            target="_blank"
+            class="links"
+          >
+            <i class="fa fa-map-marker"><span> turkey-sakarya</span></i></a
+          >
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home" class="links">
+            <i class="fa fa-arrow-right"><span>home</span></i></a
+          >
+          <a href="#categories" class="links">
+            <i class="fa fa-arrow-right"><span>categories</span></i></a
+          >
+          <a href="#review" class="links">
+            <i class="fa fa-arrow-right"><span>review</span></i></a
+          >
+          <a href="#about-us" class="links">
+            <i class="fa fa-arrow-right"><span>about us</span></i></a
+          >
+          <a href="#contack-section" class="links">
+            <i class="fa fa-arrow-right"><span>contact</span></i></a
+          >
+          <a href="math_game.html" target="_blank" class="links">
+            <i class="fa fa-arrow-right"><span>math game</span></i></a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="Copyright">Copyright - Yahya Elserhan 2023</div>
+    <script src="online_market.js"></script>
+  </body>
+</html>

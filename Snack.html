@@ -1,0 +1,438 @@
+i<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serhan Market</title>
+    <link rel="icon" href="serhan.ico" />
+    <link rel="stylesheet" href="categories.css" />
+    <link rel="stylesheet" href="online_market.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header kismi -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fa fa-shopping-basket"></i>serhan market</a
+      >
+
+      <nav class="navbar">
+        <a href="online_market.html#home">Home</a>
+        <a href="online_market.html#categories">categories </a>
+        <a href="online_market.html#review">Review</a>
+        <a href="online_market.html#about-us">About us</a>
+        <a href="online_market.html#contack-section">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn" title="menu"></div>
+        <div class="fa fa-search" id="search-btn" title="search"></div>
+        <div
+          class="fa fa-shopping-cart"
+          id="car-btn"
+          title="shopping cart"
+        ></div>
+        <div class="fa fa-user" id="login-btn" title="login now"></div>
+        <div class="fa fa-clock-o" id="clock-btn" title="current time"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+
+      <!-- sepete -->
+      <div class="shopping-cart">
+        <h1>shopping cart</h1>
+        <div class="product-cart"></div>
+        <div class="total">total : $0.00</div>
+        <a href="chek-out.html" class="btn">check out</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password <a href="forget_password_page.html">click here</a></p>
+        <p>don't have an account<a href="create_page.html"> create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+      <!-- js'te cakisma olmasin diye burda iki class yaptim -->
+      <div class="clock" id="clock">
+        <div id="currentTime" class="current-time"></div>
+      </div>
+    </header>
+
+    <!--atıştırmalık kimi -->
+
+    <section class="product" id="product" style="margin-top: 10rem">
+      <h1 class="heading">our <span>Snack</span></h1>
+      <div class="box-container">
+        <!-- cheese chips -->
+        <div class="box">
+          <span class="discount">--33%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/cheese chips.png"
+            alt="cheese chips"
+            width="150px"
+            height="150px"
+          />
+          <h3>cheese chips<span style="font-size: 1rem">(400 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$10.50 <span>$13.20</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece </span>
+          </div>
+          <a  class="btn">add to cart</a>
+        </div>
+        <!--chips with ketchup-->
+        <div class="box">
+          <span class="discount">--40%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/chips with ketchup.jpg"
+            alt="chips with ketchup"
+            width="150px"
+            height="150px"
+          />
+          <h3>ketchup chips<span style="font-size: 1rem"> (150kg)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+
+        <!--Nuts -->
+        <div class="box">
+          <span class="discount">--25%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img src="Sncak/Nuts.jpg" alt="Nuts " width="150px" height="150px" />
+          <h3>Nuts</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$13.50 <span>$15.20</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Crackers-->
+        <div class="box">
+          <span class="discount">--38%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Crackers.jpeg"
+            alt="Crackers"
+            width="150px"
+            height="150px"
+          />
+          <h3>Crackers<span style="font-size: 1rem"> (500 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$5.50 <span>$7.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Popcorn -->
+        <div class="box">
+          <span class="discount">--40%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Popcorn.jpg"
+            alt="Popcorn "
+            width="150px"
+            height="150px"
+          />
+          <h3>Popcorn <span style="font-size: 1rem"> (200 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Chocolate-->
+        <div class="box">
+          <span class="discount">--40%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Chocolate.png"
+            alt="Chocolate"
+            width="150px"
+            height="150px"
+          />
+          <h3>Chocolate<span style="font-size: 1rem"> (300 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a  class="btn">add to cart</a>
+        </div>
+        <!--Biscuits-->
+        <div class="box">
+          <span class="discount">--20%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Biscuits.jpg "
+            alt="Biscuits"
+            width="160px"
+            height="150px"
+          />
+          <h3>Biscuits</h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Gummy Bears-->
+        <div class="box">
+          <span class="discount">--25%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Gummy Bears.png"
+            alt="Gummy Bears"
+            width="150px"
+            height="150px"
+          />
+          <h3>Gummy Bears<span style="font-size: 1rem"> (150 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Dried Fruit-->
+        <div class="box">
+          <span class="discount">--35%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Dried Fruit.jpg"
+            alt="Dried Fruit"
+            width="150px"
+            height="150px"
+          />
+          <h3>Dried Fruit<span style="font-size: 1rem"> (500 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Pretzels-->
+        <div class="box">
+          <span class="discount">--40%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Pretzels.png"
+            alt="Pretzels"
+            width="150px"
+            height="150px"
+          />
+          <h3>Pumpernickel<span style="font-size: 1rem"> (100 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--Trail Mix-->
+        <div class="box">
+          <span class="discount">--29%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Trail Mix.jpg"
+            alt="Trail Mix"
+            width="150px"
+            height="150px"
+          />
+          <h3>Trail Mix<span style="font-size: 1rem"> (280 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$15.50 <span>$19.00</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a class="btn">add to cart</a>
+        </div>
+        <!--  Rice Cakes -->
+        <div class="box">
+          <span class="discount">--33%</span>
+          <div class="icons">
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <img
+            src="Sncak/Rice Cakes.png"
+            alt="  Rice Cakes"
+            width="150px"
+            height="150px"
+          />
+          <h3>Rice Cakes<span style="font-size: 1rem"> (300 gr)</span></h3>
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <div class="price">$7.50 <span>$10.50</span></div>
+          <div class="quantity">
+            <span>quantity : </span>
+            <input type="number" min="1" max="1000" value="1" />
+            <span> /piece</span>
+          </div>
+          <a" class="btn">add to cart</a>
+        </div>
+
+        <!-- -->
+      </div>
+    </section>
+
+    <script src="online_market.js"></script>
+  </body>
+</html>

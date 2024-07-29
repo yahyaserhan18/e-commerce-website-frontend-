@@ -1,0 +1,130 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Create a new account page</title>
+  </head>
+  <body style="background-color: rgb(197, 197, 255)">
+    <section id="header">
+      <div
+        style="background-color: rgb(213, 255, 185)"
+        class="text-center py-4"
+      >
+        <div class="container">
+          <p style="color: blue; font-weight: bold" class="display-4 my-2">
+            Create a new account page
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container mt-4 p-5 rounded-lg"
+      style="background-color: #ffffff"
+    >
+      <!--  -->
+      <form class="col g-3">
+        <div class="row">
+          <div class="col mb-4">
+            <label for="inputFirstName" class="form-label">Fisrt Name</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+              id="inputFirstName"
+            />
+          </div>
+          <div class="col">
+            <label for="inputLasttName" class="form-label">Last Name</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+              id="inputLasttName"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input
+              required
+              type="email"
+              class="form-control"
+              id="inputEmail4 "
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input required type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-2">
+            <label for="inputPhone" class="form-label">Phone</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="inputPhone"
+              placeholder="XXXXXXXXXX"
+            />
+          </div>
+        </div>
+        <div class="col-12 mt-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">remember me </label>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center mt-2">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
